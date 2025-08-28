@@ -1,4 +1,4 @@
-<img width="1868" height="980" alt="Captura de pantalla 2025-08-11 202114" src="https://github.com/user-attachments/assets/5393aaa2-6503-467d-8180-115fc37d9533" />
+<img width="1867" height="980" alt="Captura de pantalla 2025-08-28 095650" src="https://github.com/user-attachments/assets/4f087110-50c1-4cca-b62d-11497b0f5a2b" />
 <h1>¡Bienvenido a mi proyecto de portafolio!</h1> 
 Proyecto realizado con la guia y enseñanza de Barbara dos Santos en la fase de candidatos del programa ONE de Oracle y Alura Latam.
 
