@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currículum Vitae</title>
-        <link rel="stylesheet" href="./styles/style-curriculum.css"
+        <link rel="stylesheet" href="./styles/style.css"
     </head>
     <body>
 
@@ -12,8 +12,9 @@
             <nav class="header__menu"> 
                 <a class="header__menu__link" href="index.html"> Home</a>
                 <a class="header__menu__link" href="about.html"> Sobre mí</a>
-                <a class="header__menu__link" href="curriculum.html"> Curriculum</a>
+                <a class="header__menu__link" href="projects.html"> Proyectos</a>
             </nav>
+            <button id="theme-toggle" class="theme-toggle-button">Modo claro</button>
         </header>
         <main></main>
          <h1 class="">Miguel Angel Ferro Escalante</h1>
@@ -53,5 +54,23 @@
         <footer class="footer">
             <h3>&copy; 2025 MikatholicDev. Todos los derechos reservados</h3>
         </footer>
+        <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            // Alternar la clase 'light-mode' en el body
+            body.classList.toggle('light-mode');
+
+            // Cambiar el texto del botón según el modo actual
+            if (body.classList.contains('light-mode')) {
+                themeToggle.textContent = 'Modo oscuro';
+            } else {
+                themeToggle.textContent = 'Modo claro';
+            }
+        });
+    });
+</script>
 </body>
 </html>
