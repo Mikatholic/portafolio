@@ -11,4 +11,4 @@ Actualmente lo voy modificando a mi gusto.
 - Flex-box
 
 ### Hecho por Miguel Angel Ferro Escalante
-### Linkedin: [https://www.linkedin.com/school/aluracursos/](https://www.linkedin.com/in/miguel-angel-ferro-escalante/)
+### Linkedin: (https://www.linkedin.com/in/miguel-angel-ferro-escalante/)
