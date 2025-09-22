@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Define las variables de color y fuente para el modo oscuro por defecto */
+:root {
+    --color-primario: #000000;
+    --color-secundario: #ffb700;
+    --color-terciario: #ffffff;
+    --color-hover: #616161;
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "krona One", sans-serif;
+}
+
+/* Define los colores para el modo claro */
+.light-mode {
+    --color-primario: #ffffff;
+    --color-secundario: #000000;
+    --color-terciario: #ffb700;
+    --color-hover: #e0e0e0;
+}
+
+/* Resetea el padding y el margin de todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: var(--color-primario); /* Color de fondo principal */
+    color: var(--color-secundario); /* Color del texto secundario */
+    box-sizing: border-box; /* Incluye padding y border en el ancho del elemento */
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilos para el encabezado */
+.header {
+    padding: 2% 0% 0% 15%;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+/* Estilos para el menú de navegación */
+.header__menu {
+    display: flex;
+    gap: 80px; /* Espacio entre los elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para la sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/* Estilos para el contenedor del contenido de la presentación */
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 40px; /* Espacio entre los elementos */
+}
+
+/* Estilos para el título principal */
+.presentacion__contenido__titulo {
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+}
+
+/* Estilos para el texto destacado dentro del título */
+.titulo-destaque {
+    color: var(--color-terciario); /* Color del texto terciario */
+}
+
+/* Estilos para el subtítulo */
+.presentacion__contenido__subtitulo {
+    font-size: 1.2rem;
+    font-family: var(--fuente-krona);
+}
+
+/* Estilos para el texto de la presentación */
+.presentacion__contenido__texto {
+    font-size: 1.1rem;
+    font-family: var(--fuente-montserrat);
+    color: var(--color-terciario);
+}
+
+/* Estilos para la imagen de la presentación */
+.presentacion__imagen {
+    width: 40%;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: var(--color-secundario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Estilos para el botón de cambio de tema */
+.theme-toggle-button {
+    background: none;
+    border: 2px solid var(--color-secundario);
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 300px;
+    transition: all 0.5s ease; /* Transición suave para todos los cambios */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.theme-toggle-button:hover {
+    background-color: var(--color-hover);
+    color: var(--color-primario);
+}
+
+/* Media query para pantallas con un ancho máximo de 1023px (diseño responsivo) */
+@media (max-width: 1023px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center; /* Centra los elementos del menú */
+    }
+
+    .presentacion {
+        flex-direction: column-reverse; /* Invierte el orden de los elementos en una columna */
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto; /* Ancho automático para ajustarse al contenido */
+    }
+}
