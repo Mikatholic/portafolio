@@ -87,6 +87,7 @@ body {
 .presentacion__contenido__subtitulo {
     font-size: 1.2rem;
     font-family: var(--fuente-krona);
+    margin-top: 15px; /* Agrega un margen de 30px en la parte superior */
 }
 
 /* Estilos para el texto de la presentación */
